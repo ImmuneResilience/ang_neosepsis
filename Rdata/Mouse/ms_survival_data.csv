@@ -1,0 +1,314 @@
+unique_pup_id,sex,experiment_type,group,outcome,sac_hpc
+22626_06-Aug-2020_1,m,L-Arg_Ang1_treatment,L-Arg,0,96
+22626_06-Aug-2020_2,f,L-Arg_Ang1_treatment,L-Arg,1,19
+22626_06-Aug-2020_3,f,L-Arg_Ang1_treatment,Ang1,0,96
+22626_06-Aug-2020_4,f,L-Arg_Ang1_treatment,Ang1,0,96
+22803_6-Mar-2020_1,NA,anti-Ang2,CS,1,15.83
+22803_6-Mar-2020_2,NA,anti-Ang2,CS,1,15.83
+22803_6-Mar-2020_3,NA,anti-Ang2,CS,1,23.5
+22803_6-Mar-2020_4,NA,anti-Ang2,CS,1,15.83
+22803_6-Mar-2020_7,NA,anti-Ang2,anti-Ang2,1,15.83
+22804_08-May-2020_1,f,ARA_survival,CS,0,96
+22804_08-May-2020_2,m,ARA_survival,CS,0,96
+22804_08-May-2020_3,f,ARA_survival,AA,0,96
+22804_08-May-2020_4,m,ARA_survival,AA,0,96
+22804_08-May-2020_5,f,ARA_survival,AA,0,96
+22806_08-May-2020_1,m,ARA_survival,AA,0,96
+22806_08-May-2020_2,m,ARA_survival,AA,0,96
+22806_08-May-2020_3,f,ARA_survival,CS,0,96
+22806_08-May-2020_4,f,ARA_survival,CS,1,17.67
+22806_08-May-2020_5,m,ARA_survival,AA,0,96
+22806_08-May-2020_6,f,ARA_survival,AA,0,96
+22806_08-May-2020_7,m,ARA_survival,CS,1,17.67
+22808_07-May-2020_1,f,ARA_survival,CS,1,17.67
+22808_07-May-2020_2,f,ARA_survival,CS,1,17.67
+22808_07-May-2020_3,m,ARA_survival,AA,0,96
+22808_07-May-2020_4,m,ARA_survival,AA,1,17.67
+22808_07-May-2020_5,m,ARA_survival,AA,0,96
+22808_07-May-2020_6,f,ARA_survival,AA,0,96
+22808_07-May-2020_7,m,ARA_survival,CS,1,17.58
+22811_27-Feb-2020_1,m,L-NAME,CS,1,14.67
+22811_27-Feb-2020_2,m,L-NAME,CS,0,96
+22811_27-Feb-2020_3,m,L-NAME,L-NAME,1,14.67
+22811_27-Feb-2020_4,f,L-NAME,L-NAME,1,14.67
+22811_27-Feb-2020_5,m,L-NAME,L-NAME,1,14.67
+22811_27-Feb-2020_6,f,L-NAME,L-NAME,1,14.67
+22812_27-Feb-2020_1,f,L-NAME,CS,1,14.5
+22812_27-Feb-2020_2,f,L-NAME,CS,1,14.5
+22812_27-Feb-2020_3,m,L-NAME,L-NAME,1,14.5
+22812_27-Feb-2020_4,f,L-NAME,L-NAME,0,96
+22813_08-May-2020_1,m,ARA_survival,CS,1,17.58
+22813_08-May-2020_2,f,ARA_survival,CS,1,17.58
+22813_08-May-2020_3,m,ARA_survival,AA,1,40.75
+22813_08-May-2020_4,m,ARA_survival,AA,1,17.58
+22813_08-May-2020_5,f,ARA_survival,AA,0,96
+22813_08-May-2020_6,f,ARA_survival,CS,1,38.75
+22813_08-May-2020_7,f,ARA_survival,AA,0,96
+22813_27-Feb-2020_1,f,L-NAME,CS,0,96
+22813_27-Feb-2020_2,m,L-NAME,CS,0,96
+22813_27-Feb-2020_3,m,L-NAME,CS,1,17.83
+22813_27-Feb-2020_4,f,L-NAME,L-NAME,1,14.42
+22813_27-Feb-2020_5,f,L-NAME,L-NAME,1,14.42
+22813_27-Feb-2020_6,m,L-NAME,L-NAME,1,14.42
+22814_1-Mar-2020_1,m,L-NAME,CS,0,96
+22814_1-Mar-2020_2,f,L-NAME,CS,0,96
+22814_1-Mar-2020_3,m,L-NAME,L-NAME,1,15.5
+22814_1-Mar-2020_4,m,L-NAME,L-NAME,1,15.5
+22814_1-Mar-2020_5,f,L-NAME,L-NAME,1,15.5
+22814_1-Mar-2020_6,f,L-NAME,L-NAME,1,15.5
+22814_1-Mar-2020_7,f,L-NAME,L-NAME,1,15.5
+22814_1-Mar-2020_8,m,L-NAME,CS,1,20.75
+22814_10-May-2020_1,f,ARA_survival,CS,1,17.75
+22814_10-May-2020_2,f,ARA_survival,AA,0,96
+22814_10-May-2020_3,f,ARA_survival,AA,0,96
+22814_10-May-2020_4,m,ARA_survival,AA,0,96
+22814_10-May-2020_5,f,ARA_survival,AA,0,96
+22815_2-Mar-2020_1,f,anti-Ang2,CS,0,96
+22815_2-Mar-2020_2,m,anti-Ang2,CS,0,96
+22815_2-Mar-2020_3,m,anti-Ang2,CS,0,96
+22815_2-Mar-2020_4,m,anti-Ang2,anti-Ang2,1,15.5
+22815_2-Mar-2020_5,m,anti-Ang2,anti-Ang2,0,96
+22815_2-Mar-2020_6,f,anti-Ang2,anti-Ang2,0,96
+22815_2-Mar-2020_7,m,anti-Ang2,anti-Ang2,0,96
+22816_1-Mar-2020_1,m,L-NAME,CS,0,96
+22816_1-Mar-2020_2,m,L-NAME,CS,0,96
+22816_1-Mar-2020_3,m,L-NAME,L-NAME,1,15.25
+22816_1-Mar-2020_4,f,L-NAME,L-NAME,1,15.25
+22816_1-Mar-2020_5,m,L-NAME,L-NAME,1,20.5
+22816_1-Mar-2020_6,m,L-NAME,L-NAME,1,15.25
+22818_29-Mar-2020_1,f,L-NAME_Ang1,Ang1+L-NAME,1,17
+22818_29-Mar-2020_2,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22818_29-Mar-2020_3,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22818_29-Mar-2020_4,m,L-NAME_Ang1,L-NAME,1,17
+22818_29-Mar-2020_5,m,L-NAME_Ang1,L-NAME,1,17
+22818_29-Mar-2020_6,f,L-NAME_Ang1,L-NAME,1,17
+22819_05-Aug-2020_1,m,L-Arg_Ang1_treatment,CS,1,18.67
+22819_05-Aug-2020_2,f,L-Arg_Ang1_treatment,CS,1,18.67
+22819_05-Aug-2020_3,m,L-Arg_Ang1_treatment,L-Arg,1,18.67
+22819_05-Aug-2020_4,f,L-Arg_Ang1_treatment,L-Arg,1,18.67
+22819_05-Aug-2020_5,f,L-Arg_Ang1_treatment,Ang1,0,96
+22819_05-Aug-2020_6,m,L-Arg_Ang1_treatment,Ang1+L-Arg,1,18.67
+22819_27-Mar-2020_1,m,L-NAME_Ang1,L-NAME,1,17.6
+22819_27-Mar-2020_2,f,L-NAME_Ang1,L-NAME,1,41.83
+22819_27-Mar-2020_3,f,L-NAME_Ang1,L-NAME,1,17.62
+22819_27-Mar-2020_4,m,L-NAME_Ang1,L-NAME,1,17.57
+22819_27-Mar-2020_5,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22819_27-Mar-2020_6,f,L-NAME_Ang1,Ang1+L-NAME,1,66.17
+22819_27-Mar-2020_7,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22819_27-Mar-2020_8,f,L-NAME_Ang1,Ang1+L-NAME,1,41.67
+22820_1-Mar-2020_1,f,L-NAME,CS,1,24.5
+22820_1-Mar-2020_2,m,L-NAME,CS,1,14.75
+22820_1-Mar-2020_3,m,L-NAME,L-NAME,1,14.75
+22820_1-Mar-2020_4,m,L-NAME,L-NAME,1,14.75
+22820_1-Mar-2020_5,f,L-NAME,L-NAME,1,14.75
+22820_1-Mar-2020_6,m,L-NAME,L-NAME,1,14.75
+22820_28-Mar-2020_1,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22820_28-Mar-2020_2,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22820_28-Mar-2020_3,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22820_28-Mar-2020_4,m,L-NAME_Ang1,L-NAME,0,96
+22820_28-Mar-2020_5,f,L-NAME_Ang1,L-NAME,1,17.47
+22820_28-Mar-2020_6,f,L-NAME_Ang1,L-NAME,1,17.47
+22820_28-Mar-2020_7,f,L-NAME_Ang1,L-NAME,1,17.47
+22820_29-Jul-2020_1,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22820_29-Jul-2020_2,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22820_29-Jul-2020_3,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22820_29-Jul-2020_4,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22820_29-Jul-2020_5,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22820_29-Jul-2020_6,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_08-May-2020_1,m,ARA_survival,CS,0,96
+22821_08-May-2020_2,f,ARA_survival,AA,0,96
+22821_08-May-2020_3,f,ARA_survival,AA,0,96
+22821_08-May-2020_4,f,ARA_survival,AA,0,96
+22821_08-May-2020_5,f,ARA_survival,AA,0,96
+22821_08-May-2020_6,f,ARA_survival,AA,0,96
+22821_08-May-2020_7,m,ARA_survival,CS,0,96
+22821_08-May-2020_8,f,ARA_survival,CS,1,17.5
+22821_20-Feb-2020_1,f,ang1_ang2,CS,1,14
+22821_20-Feb-2020_2,m,ang1_ang2,CS,0,96
+22821_20-Feb-2020_3,m,ang1_ang2,Ang1,0,96
+22821_20-Feb-2020_4,m,ang1_ang2,Ang2,1,14
+22821_28-Mar-2020_1,f,L-NAME_Ang1,Ang1+L-NAME,1,17.6
+22821_28-Mar-2020_2,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22821_28-Mar-2020_3,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22821_28-Mar-2020_4,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22821_28-Mar-2020_5,m,L-NAME_Ang1,L-NAME,1,17.6
+22821_28-Mar-2020_6,f,L-NAME_Ang1,L-NAME,1,66.5
+22821_29-Jul-2020_1,NA,L-Arg_Ang1_treatment,CS,1,15.83
+22821_29-Jul-2020_2,NA,L-Arg_Ang1_treatment,CS,1,15.83
+22821_29-Jul-2020_3,NA,L-Arg_Ang1_treatment,CS,1,15.83
+22821_29-Jul-2020_4,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_29-Jul-2020_5,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_29-Jul-2020_6,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_29-Jul-2020_7,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_29-Jul-2020_8,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22821_3-Mar-2020_1,f,anti-Ang2,CS,0,96
+22821_3-Mar-2020_2,f,anti-Ang2,CS,1,15.25
+22821_3-Mar-2020_3,f,anti-Ang2,anti-Ang2,0,96
+22821_3-Mar-2020_4,m,anti-Ang2,anti-Ang2,0,96
+22821_3-Mar-2020_5,f,anti-Ang2,anti-Ang2,0,96
+22821_3-Mar-2020_6,m,anti-Ang2,anti-Ang2,0,96
+22821_3-Mar-2020_7,f,anti-Ang2,anti-Ang2,0,96
+22821_3-Mar-2020_8,m,anti-Ang2,anti-Ang2,0,96
+22822_10-May-2020_1,f,ARA_survival,CS,0,96
+22822_10-May-2020_2,f,ARA_survival,AA,1,17.83
+22822_10-May-2020_3,m,ARA_survival,AA,0,96
+22822_10-May-2020_4,f,ARA_survival,AA,1,17.83
+22822_10-May-2020_5,m,ARA_survival,AA,1,21.25
+22822_10-May-2020_6,m,ARA_survival,AA,1,17.83
+22822_20-Feb-2020_1,m,ang1_ang2,CS,1,37.25
+22822_20-Feb-2020_2,m,ang1_ang2,Ang1,0,96
+22822_20-Feb-2020_3,f,ang1_ang2,Ang1,0,96
+22822_20-Feb-2020_4,m,ang1_ang2,Ang2,0,96
+22822_20-Feb-2020_5,m,ang1_ang2,Ang2,0,96
+22822_27-Mar-2020_1,m,L-NAME_Ang1,Ang1+L-NAME,1,17.6
+22822_27-Mar-2020_2,f,L-NAME_Ang1,Ang1+L-NAME,1,66.33
+22822_27-Mar-2020_3,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22822_27-Mar-2020_4,f,L-NAME_Ang1,Ang1+L-NAME,1,66.33
+22822_27-Mar-2020_5,m,L-NAME_Ang1,L-NAME,1,66.33
+22822_27-Mar-2020_6,m,L-NAME_Ang1,L-NAME,1,17.62
+22823_19-Feb-2020_1,m,ang1_ang2,CS,0,96
+22823_19-Feb-2020_2,f,ang1_ang2,CS,0,96
+22823_19-Feb-2020_3,m,ang1_ang2,Ang1,0,96
+22823_19-Feb-2020_4,f,ang1_ang2,Ang1,0,96
+22823_19-Feb-2020_5,m,ang1_ang2,Ang2,0,96
+22823_19-Feb-2020_6,f,ang1_ang2,Ang2,1,13.75
+22823_29-Jul-2020_1,NA,L-Arg_Ang1_treatment,CS,1,15.67
+22823_29-Jul-2020_2,NA,L-Arg_Ang1_treatment,CS,0,96
+22823_29-Jul-2020_3,NA,L-Arg_Ang1_treatment,CS,1,43.75
+22823_29-Jul-2020_4,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22823_29-Jul-2020_5,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22823_29-Jul-2020_6,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22825_05-Aug-2020_1,m,L-Arg_Ang1_treatment,CS,1,18.75
+22825_05-Aug-2020_2,f,L-Arg_Ang1_treatment,L-Arg,0,96
+22825_05-Aug-2020_3,m,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22825_05-Aug-2020_4,f,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22826_29-Jul-2020_1,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22826_29-Jul-2020_2,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22826_29-Jul-2020_3,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22826_29-Jul-2020_4,NA,L-Arg_Ang1_treatment,CS,1,15.75
+22826_29-Jul-2020_5,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22826_29-Jul-2020_6,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22826_29-Jul-2020_7,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22827_05-Aug-2020_1,f,L-Arg_Ang1_treatment,L-Arg,0,96
+22827_05-Aug-2020_2,f,L-Arg_Ang1_treatment,L-Arg,1,18.92
+22827_05-Aug-2020_3,m,L-Arg_Ang1_treatment,L-Arg,1,18.92
+22827_05-Aug-2020_4,f,L-Arg_Ang1_treatment,Ang1,1,18.92
+22827_05-Aug-2020_5,m,L-Arg_Ang1_treatment,Ang1,1,25.25
+22827_05-Aug-2020_6,f,L-Arg_Ang1_treatment,Ang1,0,96
+22827_29-Jul-2020_1,NA,L-Arg_Ang1_treatment,CS,1,15.67
+22827_29-Jul-2020_2,NA,L-Arg_Ang1_treatment,CS,1,15.67
+22827_29-Jul-2020_3,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22827_29-Jul-2020_4,NA,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22828_05-Aug-2020_1,m,L-Arg_Ang1_treatment,CS,1,18.5
+22828_05-Aug-2020_2,f,L-Arg_Ang1_treatment,Ang1,1,24
+22828_05-Aug-2020_3,m,L-Arg_Ang1_treatment,Ang1,1,18.5
+22828_05-Aug-2020_4,f,L-Arg_Ang1_treatment,L-Arg,0,96
+22828_05-Aug-2020_5,m,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22828_05-Aug-2020_6,f,L-Arg_Ang1_treatment,Ang1+L-Arg,0,96
+22829_01-Apr-2020_1,f,L-NAME_Ang1,Ang1+L-NAME,1,17.25
+22829_01-Apr-2020_2,m,L-NAME_Ang1,Ang1+L-NAME,0,96
+22829_01-Apr-2020_3,f,L-NAME_Ang1,Ang1+L-NAME,0,96
+22829_01-Apr-2020_4,m,L-NAME_Ang1,L-NAME,1,17.25
+22829_01-Apr-2020_5,f,L-NAME_Ang1,L-NAME,1,17.25
+22829_01-Apr-2020_6,f,L-NAME_Ang1,L-NAME,1,17.25
+22829_05-Aug-2020_1,m,L-Arg_Ang1_treatment,CS,1,18.5
+22829_05-Aug-2020_2,m,L-Arg_Ang1_treatment,L-Arg,0,96
+22829_05-Aug-2020_3,f,L-Arg_Ang1_treatment,L-Arg,1,18.5
+22829_05-Aug-2020_4,f,L-Arg_Ang1_treatment,Ang1,1,18.5
+22829_05-Aug-2020_5,f,L-Arg_Ang1_treatment,Ang1,0,96
+22829_08-Feb-2020_1,f,ang1_ang2,Ang2,1,36.33
+22829_08-Feb-2020_2,f,ang1_ang2,Ang2,1,13.17
+22829_08-Feb-2020_3,m,ang1_ang2,Ang1,0,96
+22829_08-Feb-2020_4,m,ang1_ang2,Ang1,0,96
+22829_08-Feb-2020_5,f,ang1_ang2,Ang2,1,36.33
+22829_08-Feb-2020_6,f,ang1_ang2,Ang1,0,96
+22829_24-Feb-2020_1,m,ang1_ang2,CS,0,96
+22829_24-Feb-2020_2,f,ang1_ang2,CS,0,96
+22829_24-Feb-2020_3,m,ang1_ang2,CS,1,18.5
+22829_24-Feb-2020_4,m,ang1_ang2,Ang1,0,96
+22829_24-Feb-2020_5,m,ang1_ang2,Ang1,0,96
+22829_24-Feb-2020_6,m,ang1_ang2,Ang1,0,96
+22829_24-Feb-2020_7,m,ang1_ang2,Ang2,0,96
+22829_24-Feb-2020_8,f,ang1_ang2,Ang2,1,14.58
+22830_05-Aug-2020_1,f,L-Arg_Ang1_treatment,L-Arg,1,18.33
+22830_05-Aug-2020_2,f,L-Arg_Ang1_treatment,L-Arg,1,18.33
+22830_05-Aug-2020_3,f,L-Arg_Ang1_treatment,L-Arg,1,18.33
+22830_05-Aug-2020_4,m,L-Arg_Ang1_treatment,Ang1,1,24
+22830_05-Aug-2020_5,f,L-Arg_Ang1_treatment,Ang1,0,96
+22830_25-Feb-2020_1,m,ang1_ang2,CS,0,96
+22830_25-Feb-2020_2,f,ang1_ang2,CS,1,14.25
+22830_25-Feb-2020_3,m,ang1_ang2,Ang1,0,96
+22830_25-Feb-2020_4,f,ang1_ang2,Ang1,1,14.25
+22830_25-Feb-2020_5,m,ang1_ang2,Ang2,1,14.25
+22830_25-Feb-2020_6,f,ang1_ang2,Ang2,1,14.25
+22830_25-Feb-2020_7,f,ang1_ang2,Ang2,1,14.25
+22831_06-Aug-2020_1,f,L-Arg_Ang1_treatment,L-Arg,1,18.83
+22831_06-Aug-2020_2,m,L-Arg_Ang1_treatment,L-Arg,0,96
+22831_06-Aug-2020_3,m,L-Arg_Ang1_treatment,L-Arg,0,96
+22831_06-Aug-2020_4,m,L-Arg_Ang1_treatment,Ang1,0,96
+22831_06-Aug-2020_5,f,L-Arg_Ang1_treatment,Ang1,1,18.83
+22831_06-Aug-2020_6,f,L-Arg_Ang1_treatment,Ang1,0,96
+22831_13-Feb-2020_1,f,ang1_ang2,Ang2,0,96
+22831_13-Feb-2020_10,m,ang1_ang2,Ang1,0,96
+22831_13-Feb-2020_11,f,ang1_ang2,CS,1,12
+22831_13-Feb-2020_2,f,ang1_ang2,Ang2,1,37.5
+22831_13-Feb-2020_3,f,ang1_ang2,Ang1,0,96
+22831_13-Feb-2020_4,f,ang1_ang2,Ang1,0,96
+22831_13-Feb-2020_5,m,ang1_ang2,CS,1,12
+22831_13-Feb-2020_6,f,ang1_ang2,CS,0,96
+22831_13-Feb-2020_7,m,ang1_ang2,Ang2,0,96
+22831_13-Feb-2020_8,f,ang1_ang2,Ang2,0,96
+22831_13-Feb-2020_9,m,ang1_ang2,Ang1,0,96
+22837_08-Feb-2020_1,m,ang1_ang2,Ang2,1,36.33
+22837_08-Feb-2020_2,f,ang1_ang2,Ang2,1,36.33
+22837_08-Feb-2020_3,m,ang1_ang2,Ang1,0,96
+22837_08-Feb-2020_4,m,ang1_ang2,Ang1,0,96
+22837_08-Feb-2020_5,f,ang1_ang2,Ang2,0,96
+22837_08-Feb-2020_6,m,ang1_ang2,Ang2,0,96
+22837_08-Feb-2020_7,f,ang1_ang2,Ang1,0,96
+22837_08-Feb-2020_8,f,ang1_ang2,Ang1,0,96
+22896_4-Mar-2020_1,m,anti-Ang2,CS,1,15
+22896_4-Mar-2020_2,m,anti-Ang2,CS,1,15
+22896_4-Mar-2020_3,f,anti-Ang2,anti-Ang2,0,96
+22896_4-Mar-2020_4,m,anti-Ang2,anti-Ang2,0,96
+22896_4-Mar-2020_5,f,anti-Ang2,anti-Ang2,0,96
+22896_4-Mar-2020_6,f,anti-Ang2,anti-Ang2,0,96
+F1_22813_20220815,M,Ang1-Ang2 Survival,CS,0,69
+F1_22814_20220815,M,Ang1-Ang2 Survival,CS,1,34.7
+F1_22814_20220822_2,M,Ang1-Ang2 Survival,Ang1+Ang2,1,24.07
+F1_22815_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,1,10.87
+F1_22815_20220822_2,F,Ang1-Ang2 Survival,CS,1,15.87
+F1_22816_20220822_2,M,Ang1-Ang2 Survival,CS,1,19.45
+F2_22813_20220815,F,Ang1-Ang2 Survival,CS,1,14.8
+F2_22814_20220815,F,Ang1-Ang2 Survival,CS,1,14.85
+F2_22814_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,0,63.2
+F2_22815_20220815,M,Ang1-Ang2 Survival,Ang1+Ang2,1,14.72
+F2_22815_20220822_2,M,Ang1-Ang2 Survival,CS,1,15.8
+F2_22816_20220822_2,F,Ang1-Ang2 Survival,CS,1,28.3
+F3_22813_20220815,F,Ang1-Ang2 Survival,CS,1,34.53
+F3_22814_20220815,F,Ang1-Ang2 Survival,CS,0,68.85
+F3_22814_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,1,15.58
+F3_22815_20220815,F,Ang1-Ang2 Survival,CS,1,14.68
+F3_22815_20220822_2,M,Ang1-Ang2 Survival,CS,1,11.03
+F3_22816_20220822_2,F,Ang1-Ang2 Survival,CS,1,19.35
+F4_22813_20220815,F,Ang1-Ang2 Survival,CS,0,68.8
+F4_22814_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,1,19.35
+F4_22815_20220815,M,Ang1-Ang2 Survival,CS,1,14.63
+F4_22816_20220822_2,F,Ang1-Ang2 Survival,CS,1,43.43
+R1_22813_20220815,M,Ang1-Ang2 Survival,Ang1+Ang2,1,10.78
+R1_22814_20220815,M,Ang1-Ang2 Survival,Ang1+Ang2,0,68.92
+R1_22815_20220815,M,Ang1-Ang2 Survival,CS,1,10.85
+R1_22815_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,1,19.65
+R1_22816_20220822_2,M,Ang1-Ang2 Survival,Ang1+Ang2,1,19.43
+R2_22813_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,1,10.72
+R2_22814_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,0,68.87
+R2_22815_20220815,F,Ang1-Ang2 Survival,CS,1,14.7
+R2_22815_20220822_2,M,Ang1-Ang2 Survival,Ang1+Ang2,1,15.78
+R3_22813_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,0,68.83
+R3_22814_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,1,18.63
+R3_22815_20220815,M,Ang1-Ang2 Survival,Ang1+Ang2,1,14.67
+R3_22815_20220822_2,M,Ang1-Ang2 Survival,Ang1+Ang2,0,63.15
+R4_22814_20220815,F,Ang1-Ang2 Survival,Ang1+Ang2,0,68.82
+R4_22815_20220815,F,Ang1-Ang2 Survival,CS,1,10.73
+R4_22815_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,1,15.68
+R4_22816_20220822_2,F,Ang1-Ang2 Survival,Ang1+Ang2,1,19.28

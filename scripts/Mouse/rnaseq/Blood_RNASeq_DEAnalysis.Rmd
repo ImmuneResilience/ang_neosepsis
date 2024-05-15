@@ -1,0 +1,204 @@
+---
+title: "Kollman neonatal mouse sepsis project: blood transcriptome"
+output: 
+  html_document:
+    theme: cerulean
+    pdf_document: default
+    pdf_print: paged
+  pdf_document: default
+date: '2023-10-04'
+---
+  
+## Background
+This script performs differential expression analysis for the mouse blood transcriptome.
+
+The classification is based on the GBM sepsis prediction model probability (classification_live).
+
+All samples were aligned to the newest genome build GRCm38.94. Globin reads were removed from all three sets of samples (blood, liver and spleen). Samples were removed based on RNASeq library sizes (i.e. only include samples with > 1M non-globin unique reads), as well as non-challenged mice that were losing weight, had high CFU in the blood, liver or spleen (ie. probably sick), and challenged mice that were gaining weight (belong to a different class). One challenged mouse was removed because it was sacrificed at 18h rather than 24 hr.
+
+
+#### Load libraries
+```{r}
+suppressMessages({
+  library(tidyverse)
+  library(ggrepel)
+  library(DESeq2)
+  library(edgeR)
+  library(gplots)
+  library(RColorBrewer)
+  library(vsn)
+  library(knitr)
+})
+```
+
+
+## Sample Sheets and Metadata Filtering
+
+```{r}
+# read in your csv sample sheet
+samples_all <- read.csv("../../../Rdata/Mouse/rnaseq/metadata/samples_blood_fastq.csv", header=TRUE)
+
+# read in the metadata
+metadata <- read.csv("../../../Rdata/Mouse/rnaseq/metadata/rnaseq.metadata.csv", header = TRUE)
+
+metadata_subset <- metadata %>% 
+  dplyr::select(rnaID, classification, classification_live, chal.status) 
+
+# Remove samples from the analyses
+samples <- samples_all %>% 
+  filter(LibraryName != "mS05") %>%  # Female, challenged, sacrificed at 18h rather than 24h
+  filter(LibraryName != "mS09") %>%  # Male, non-challenged, high CFU in blood, spleen, obviously sick
+  filter(LibraryName != "mS14") %>%  # Female, challenged, gaining weight (belong to a different class)
+  filter(LibraryName != "mS21") %>%  # Male, non-challenged, but losing weight, probably sick
+  filter(LibraryName != "mS22") %>%  # Male, challenged, gaining weight (belong to a different class)
+  filter(LibraryName != "mS11") %>%  # female, non-challenged, has CFU in liver/spleen
+  left_join(., metadata_subset, by = c("LibraryName" = "rnaID")) 
+
+samples$chal.status <- gsub("non challenged", "control", samples$chal.status)
+
+samples <- samples %>% 
+  mutate(score = case_when(
+    classification == "live" & chal.status == "control" ~ "Control",
+    classification == "die" & chal.status == "challenged" ~ "CS_Die",
+    classification == "live" & chal.status == "challenged" ~ "CS_Survive"
+  ))
+
+samples$score <- factor(samples$score, levels = c("Control", "CS_Survive", "CS_Die"))
+```
+
+
+
+## DE Analyses 
+Let's build our count matrix and metadata table.
+```{r}
+# directory of htseq-count output files
+directory <- file.path("../../../","Rdata/Mouse/rnaseq/counts")
+
+# create a dataframe for the sample table
+sampleTable <- data.frame(sampleName = samples$LibraryName,
+                          fileName = samples$countf,
+                          outcome = samples$classification,
+                          treatment = samples$chal.status,
+                          sex = samples$sex, 
+                          score = samples$score)
+
+# create the DESeqDataSet using DESeq2 function for htseq-count files
+# there are 29 samples left after filtering by metadata
+ddsHTSeq <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable,
+                                       directory = directory,
+                                       design = ~ score)
+
+# perform pre-filtering to remove genes with low counts from my count matrix
+# Specifically, I am looking for genes that have counts that are greater than 10, in at least 6 or more samples
+keep <- rowSums(counts(ddsHTSeq) > 10) >= 6
+
+dds <- ddsHTSeq[keep, ]
+
+# remove globin
+globin <- c("ENSMUSG00000069917","ENSMUSG00000069919", "ENSMUSG00000073940", "ENSMUSG00000052305", "ENSMUSG00000078621")
+
+dds <- dds[!rownames(dds) %in% globin, ]
+
+```
+
+Calculate library sizes
+```{r}
+# before globin filtering
+libsize <- as.data.frame(cbind(as.numeric(colSums(counts(ddsHTSeq)))))
+row.names(libsize) <- colnames(counts(ddsHTSeq))
+libsize.pre <- libsize %>% 
+  rownames_to_column(., "shortname") %>% 
+  dplyr::rename(., libsize_globin = V1)
+
+# after globin filtering
+libsize1 <- as.data.frame(cbind(as.numeric(colSums(counts(dds)))))
+row.names(libsize1) <- colnames(counts(dds))
+libsize.post <- libsize1 %>% 
+  rownames_to_column(., "shortname") %>% 
+  dplyr::rename(., libsize_noglobin = V1)
+
+good_libsize <- libsize.post %>% 
+  filter(libsize_noglobin > 1000000) # library sizes > 1M reads, only 24 samples left
+
+# Make a table
+samples_new <- samples %>% 
+  left_join(., libsize.pre, by = c("shortname" = "shortname")) %>% 
+  left_join(., libsize.post, by = c("shortname" = "shortname")) %>% 
+  dplyr::select(-libsize)
+
+write.csv(samples_new, "../../../results/samples_blood_libsizes.csv", row.names = FALSE)
+```
+
+
+Let's run DESeq2.
+
+```{r warning = FALSE}
+# remove samples with low library sizes
+dds <- dds[ , colnames(dds) %in% good_libsize$shortname]
+
+#run DESeq2 on your data set
+dds=DESeq(dds, parallel = TRUE)
+```
+
+### Quality Control Check
+
+Perform vst normalization.
+
+```{r}
+vsd <- varianceStabilizingTransformation(dds, blind=FALSE)
+saveRDS(object = vsd, file = "../../../results/blood_vst.rds")
+```
+
+
+Let's look at sample distribution using PCA
+
+```{r fig.width=8, fig.height=5}
+data <- plotPCA(vsd, intgroup=c("score", "sex"), returnData=TRUE)
+percentVar <-round(100 * attr(data, "percentVar"))
+
+labels = c("Control" = "Control", "CS_Survive" = "CS-Survive", "CS_Die" = "CS-Die")
+#customize colors
+col <- c("black", "#FFBF00", "cornflowerblue")
+
+ggplot(data, aes(PC1, PC2, color=score, shape=sex, label = rownames(colData(vsd)))) +
+  geom_point(size=4) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) +
+  geom_text_repel(nudge_y=0.5) +
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 14),
+    axis.title = element_text(size = 14),
+    legend.text = element_text(size = 14),
+    legend.title = element_text(size = 14)
+  ) +
+  scale_color_manual(values = col, labels=labels)
+
+```
+
+
+### Extract DE gene lists from comparisons of interest
+```{r}
+source("DESeq2_helper_functions.R")
+resultsNames(dds)
+```
+#### Survive versus control
+```{r}
+group.contrast(dds, "score", "CS_Survive", "Control", "blood")
+```
+
+#### Die versus control
+```{r}
+group.contrast(dds, "score", "CS_Die", "Control", "blood")
+```
+
+#### Die versus survive
+```{r}
+group.contrast(dds, "score", "CS_Die", "CS_Survive", "blood")
+```
+
+### Keep track of versions
+```{r}
+sessionInfo()
+```
+
